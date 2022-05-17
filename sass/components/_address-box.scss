@@ -1,0 +1,23 @@
+
+.address-box {
+    flex-basis: calc(23%);
+    &__link {
+            line-height: 1.71;
+            font-style: normal;
+            text-decoration: none;
+            color: var(--address-link-color);
+            transition: color var(--action-duration) var(--action-timing-function);
+            &--maps-color {
+                    color: var(--text-overall-color);
+                }
+            &:hover,
+            &:focus {
+                            color: var(--accent-color);
+                        }
+        }
+        
+}
+.addres-box__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+

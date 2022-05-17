@@ -1,0 +1,11 @@
+.footer{
+    &--background {
+            background-color: var(--bg-section-color);
+            padding: 60px 0;
+        }
+    &__logo {
+            color: var(--text-overall-color);
+            margin-bottom: 20px;
+            display: block;
+        }
+}

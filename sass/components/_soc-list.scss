@@ -1,0 +1,34 @@
+
+.soc-list {
+    display: flex;
+    justify-content: center;
+    &__box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            color: var(--icon-color);
+            fill: currentColor;
+            transition: color var(--action-duration) var(--action-timing-function),
+                background-color var(--action-duration) var(--action-timing-function);
+            &:hover {
+                        background-color: var(--accent-color);
+                        color: var(--text-overall-color);
+                    }
+            &--color {
+                            background-color: rgba(255, 255, 255, 0.1);
+                            color: var(--text-overall-color);
+                        }
+            }
+    &__item+&__item {
+            margin-left: 10px;
+        }
+
+}
+
+
+
+
+

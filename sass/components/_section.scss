@@ -1,0 +1,10 @@
+.section {
+    padding: 94px 0;
+
+    &--no-indent {
+        padding-bottom: 0;
+    }
+    &--background {
+            background-color: var(--secondary-section-color);
+    }
+}
