@@ -3,9 +3,17 @@
     padding: 60px 0;
 
     &--no-indent {
-        padding-bottom: 0;
+        @media screen and (min-width:1200px) {
+                  padding-bottom: 0;
+            }
+       
     }
     &--background {
             background-color: var(--secondary-section-color);
+    }
+    &--vis{
+        @media screen and (max-width:1200px) {
+                display: none;
+            }
     }
 }

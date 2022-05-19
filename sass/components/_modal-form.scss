@@ -10,6 +10,10 @@
     line-height: 1.15;
     color: var(--primary-text-color);
     margin-bottom: 12px;
+    @media screen and (max-width:767px) {
+           line-height: 1.5;
+           text-align: center;
+        }
 }
 .modal-input-wrap {
     position: relative;
@@ -69,6 +73,9 @@
             border-color: var(--accent-color);
             cursor: pointer;
         }
+    &::placeholder{
+        color: rgba($color: rgb(117, 117, 117), $alpha: 0.5);
+    }
 }
 
 .modal-field-checkbox {
@@ -78,10 +85,18 @@
 .check-text {
     font-size: 14px;
     line-height: 1.71;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    @media screen and (max-width:767px) {
+           font-size: 12px;
+           line-height: 1.17;
+        }
+    @media screen and (min-width:768px) {
+    display: flex;
+        }
+
 }
 
 .policy-link {
@@ -90,14 +105,14 @@
 }
 
 .check-text span {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 16px;
     height: 15px;
     border: 2px solid var(--primary-text-color);
     border-radius: 3px;
-    margin-right: 8px;
+    margin-right: 4px;
     transition: background-color var(--action-duration) var(--action-timing-function),
         border-color var(--action-duration) var(--action-timing-function);
     .input-check:focus+& {
@@ -107,6 +122,10 @@
                     border-color: transparent;
                     background-color: var(--accent-color);
                 }
+    @media screen and (min-width:768px) {
+             display: flex;
+            margin-right: 8px;
+         }
 }
 
 .icon-check {

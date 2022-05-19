@@ -1,6 +1,11 @@
 
 .address-box {
-    flex-basis: calc(23%);
+    @media screen and (min-width:1199px) {
+        flex-basis: calc(23%);
+    }
+    @media screen and (max-width:767px) {
+            margin-bottom: 60px;
+        }
     &__link {
             line-height: 1.71;
             font-style: normal;

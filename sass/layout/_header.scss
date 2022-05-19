@@ -1,8 +1,10 @@
 .header {
     border-bottom: 1px solid var(--header-border);
+    position: relative;
 }
 
 .header__container {
     display: flex;
     align-items: center;
+    
 }
