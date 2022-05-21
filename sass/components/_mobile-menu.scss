@@ -1,22 +1,101 @@
 .mobile-menu{
-    display: none;
+    display:block;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     left: 0;
-    top: 100%;
-    width: 100%;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
     &.is-open{
         display: block;
     }
+        // padding: 48px 0;
+    // @media screen and (max-width:425px) {
+    //     padding-left: 15px;
+    // }
+    .container{
+
+        @media screen and (max-width:767px) {
+        padding: 48px 0px 48px 40px;
+            position: relative;
+        }
+        @media screen and (max-width:415px) {
+                   padding-left: 15px;
+                }
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+    }
+    
+   
 }
-.menu-close{
-    display: none;
-    .menu-btn.is-open &{
-        display: block;
+.menu-close-btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.mobile-nav__item, .mobile-contact__item{
+    & + &{
+        margin-top: 32px;
     }
 }
-.menu-open{
-    .menu-btn.is-open & {
-            display: none;
+.mobile-nav__link {
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    color: var(--primary-text-color);
+    &--current-page{
+        color: var(--accent-color);
+    }
+    
+}
+.mobile-contact {
+    margin-bottom: 64px;
+    &__tel {
+            font-size: 34px;
+            line-height: calc(40 / 34);
+            color: var(--accent-color);
+            margin-bottom: 32px;
         }
+    &__mail {
+            font-size: 24px;
+            line-height: calc(28 / 24);
+            color: var(--secondary-text-color);
+        }
+}
+
+.mob-soc {
+    display: inline-flex;
+    &__item {
+            position: relative;
+            
+    
+            &:not(:last-child) {
+                margin-right: 20px;
+                &::after {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 100%;
+                    top: 0;
+                    right: -10px;
+                    background: rgba(33, 33, 33, 0.2);
+    
+    
+                }
+            }
+    
+        }
+    &__link {
+        font-size: 18px;
+        line-height: calc(22 / 18);
+        color: var(--accent-color);
+    }
+}
+.no-scroll {
+    overflow: hidden;
 }

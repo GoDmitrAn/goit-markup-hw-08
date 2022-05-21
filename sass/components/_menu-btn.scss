@@ -3,4 +3,9 @@
     background: none;
     padding: 0;
     margin-left: auto;
+    &:hover{
+        fill: var(--accent-color);
+    }
+    
+    
 }
