@@ -1,6 +1,10 @@
 
 .subscribe-box {
     margin-left: auto;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        flex-basis: 100%;
+        margin-top: 60px;    
+        }
     &__title {
             font-weight: 700;
             font-size: 14px;
@@ -10,4 +14,5 @@
             color: var(--text-overall-color);
             margin-bottom: 20px;
         }
+    
 }
