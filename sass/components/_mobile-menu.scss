@@ -6,13 +6,12 @@
     top: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 1;
     &.is-open{
         display: block;
     }
-        // padding: 48px 0;
-    // @media screen and (max-width:425px) {
-    //     padding-left: 15px;
-    // }
+     
+    
     .container{
 
         @media screen and (max-width:767px) {
@@ -47,10 +46,12 @@
     font-size: 40px;
     line-height: calc(47 / 40);
     color: var(--primary-text-color);
-    &--current-page{
+    // &--current-page{
+    //     color: var(--accent-color);
+    // }
+    &:hover{
         color: var(--accent-color);
     }
-    
 }
 .mobile-contact {
     margin-bottom: 64px;
@@ -59,12 +60,17 @@
             line-height: calc(40 / 34);
             color: var(--accent-color);
             margin-bottom: 32px;
+            
         }
     &__mail {
             font-size: 24px;
             line-height: calc(28 / 24);
             color: var(--secondary-text-color);
+            &:hover {
+                    color: var(--accent-color);
+                }
         }
+       
 }
 
 .mob-soc {
