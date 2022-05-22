@@ -10,6 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-height:610px) {
+        align-items: flex-start;
+    }
     transition: opacity var(--action-duration) var(--action-timing-function),
         visibility var(--action-duration) var(--action-timing-function),
         transform var(--action-duration) var(--action-timing-function);

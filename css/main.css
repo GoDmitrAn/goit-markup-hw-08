@@ -736,6 +736,11 @@ img {
   align-items: center;
   transition: opacity var(--action-duration) var(--action-timing-function), visibility var(--action-duration) var(--action-timing-function), transform var(--action-duration) var(--action-timing-function);
 }
+@media screen and (max-height: 610px) {
+  .backdrop {
+    align-items: flex-start;
+  }
+}
 
 .is-hidden {
   opacity: 0;
