@@ -81,6 +81,9 @@
     
             &:not(:last-child) {
                 margin-right: 20px;
+                @media screen and (max-width:380px) {
+                        margin-right: 16px;
+                    }
                 &::after {
                     display: block;
                     content: '';
@@ -100,6 +103,9 @@
         font-size: 18px;
         line-height: calc(22 / 18);
         color: var(--accent-color);
+        @media screen and (max-width:380px) {
+                font-size: 15px;
+            }
     }
 }
 .no-scroll {

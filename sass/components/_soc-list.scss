@@ -16,7 +16,18 @@
             &:hover {
                         background-color: var(--accent-color);
                         color: var(--text-overall-color);
+                        cursor: pointer;
                     }
+            &:focus {
+                    background-color: var(--accent-color);
+                    color: var(--text-overall-color);
+                    cursor: pointer;
+                }
+            &:active {
+                    background-color: var(--accent-color);
+                    color: var(--text-overall-color);
+                    cursor: pointer;
+                }
             &--color {
                             background-color: rgba(255, 255, 255, 0.1);
                             color: var(--text-overall-color);

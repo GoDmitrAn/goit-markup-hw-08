@@ -4,7 +4,11 @@
     padding-right: 15px;
     margin: 0 auto;
     &--align {
-        text-align: center;
+
+        
+        @media screen and (max-width:1199px) {
+            text-align: center;
+            }
         @media screen and (min-width:768px){
             display: flex;
                 align-items: baseline;

@@ -49,6 +49,7 @@
         }
     &__box {
             display: flex;
+            text-decoration: none;
             justify-content: center;
             padding: 16px 0;
             border: 1px solid #afb1b8;
@@ -60,7 +61,17 @@
             &:hover {
                         color: var(--accent-color);
                         border-color: var(--accent-color);
+                        cursor: pointer;
                     }
+            &:focus {
+                            color: var(--accent-color);
+                            border-color: var(--accent-color);
+                        }
+            &:active {
+                    color: var(--accent-color);
+                    border-color: var(--accent-color);
+                    cursor: pointer;
+                }
         }
 }
 
