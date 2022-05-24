@@ -37,7 +37,7 @@
     &__overlay {
             position: absolute;
             left: 0;
-            top: 0;
+            top: 1px;  
             height: 100%;
             transform: translateY(100%);
             transition: transform var(--action-duration) var(--action-timing-function);
