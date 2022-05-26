@@ -331,6 +331,11 @@ img {
   padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
   .section--no-indent {
     padding-bottom: 0;
   }
@@ -352,7 +357,7 @@ img {
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
     font-size: 36px;
